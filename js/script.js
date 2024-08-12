@@ -38,3 +38,16 @@ var swiper = new Swiper(".review-slider",{
     },
   },
 });
+
+// scroll to top
+document.querySelector('.scroll-top').onclick = () =>{
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
+
+// if window scroll is greater than halft of the height of the window, show the scroll to top button
+window.onscroll = () =>{
+  document.querySelector('.scroll-top').classList.toggle('active', window.scrollY > window.innerHeight/2);
+}

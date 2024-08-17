@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap");
 
 :root{
-  --primary-color: #4fb15c;
-  --secondary: #dbfffe;
+  --primary-color: #b15351;
+  --secondary: #b1535140;
   --black: #141414;
   --white: #fff;
   --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
@@ -61,6 +61,16 @@ section{
     z-index: 1000;
 }
 
+.logo_headline {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+}
+
+.logo_subheading {
+    color: var(--primary-color);
+    font-size: 1rem;
+}
+
 .scroll-top.active {
     display: flex;
     right: 2rem;
@@ -101,6 +111,7 @@ section{
   overflow: hidden;
   z-index: 1;
   border-radius: .5rem;
+  color: var(--white);
 }
 
 .btn::before{
@@ -124,7 +135,10 @@ section{
   top: 100%; left: 50%;
   transform: translateX(-50%);
   min-width: max-content;
-  color: var(--secondary);
+}
+
+.btn .text-1 {
+    color: var(--black);
 }
 
 .btn:is(:hover, :focus-visible)::before{
@@ -184,14 +198,6 @@ section{
 .header .logo img{
   width: 70px;
   padding-right: .5rem;
-}
-
-.header .logo .logo_headline {
-    font-size: 1.5rem;
-}
-
-.header .logo .logo_subheading {
-    font-size: 1rem;
 }
 
 @media screen and (max-width: 430px) {
@@ -461,7 +467,7 @@ section{
 .courses .box-container .box .content h4{
   position: absolute;
   background: var(--primary-color);
-  color: var(--secondary);
+  color: var(--white);
   top: -3rem; right: 1.5rem;
   width: 6rem;
   height: 6rem;

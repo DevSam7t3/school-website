@@ -200,11 +200,12 @@ section{
 }
 
 @media screen and (max-width: 430px) {
-    .header .logo .logo_headline {
-        display: none;
+    .header {
+        padding: 1rem 1rem;
     }
-    .header .logo .logo_subheading {
-        display: none;
+
+    .header .school_name {
+        width: 55%;
     }
 
 }
@@ -549,6 +550,7 @@ section{
 .teacher .box-container .box .image img{
   background: var(--secondary);
   width: 100%;
+  height: 280px;
 }
 
 .teacher .box-container .box:hover .image .share{
@@ -881,9 +883,9 @@ section{
     font-size: 55%;
   }
 
-  .header{
+  /* .header{
     padding: 2rem 4rem;
-  }
+  } */
 
   section{
     padding: 3rem 2rem;

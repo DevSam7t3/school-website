@@ -3,6 +3,7 @@
 :root{
   --primary-color: #b15351;
   --secondary: #b1535140;
+  --green: #00af50;
   --black: #141414;
   --white: #fff;
   --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
@@ -63,12 +64,15 @@ section{
 
 .logo_headline {
     color: var(--primary-color);
-    font-size: 1.5rem;
+    font-size: 1.9rem;
+    font-weight: bold;
+    text-transform: initial;
 }
 
 .logo_subheading {
     color: var(--primary-color);
     font-size: 1rem;
+    text-transform: initial;
 }
 
 .scroll-top.active {
@@ -79,7 +83,7 @@ section{
 
 .heading{
   position: relative;
-  color: var(--primary-color);
+  color: var(--green);
   font-size: 3rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -100,7 +104,7 @@ section{
   position: relative;
   display: inline-block;
   margin-top: 1rem;
-  color: var(--white);
+  color: transparent;
   font-size: 1.4rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -111,6 +115,10 @@ section{
   overflow: hidden;
   z-index: 1;
   border-radius: .5rem;
+}
+
+#home .btn .text {
+    color: var(--white);
 }
 
 .btn::before{
@@ -126,18 +134,8 @@ section{
 }
 
 .btn .text{
-  transition: 250ms ease;
-}
-
-.btn .text-2{
-  position: absolute;
-  top: 100%; left: 50%;
-  transform: translateX(-50%);
-  min-width: max-content;
-}
-
-.btn .text-1 {
     color: var(--black);
+    transition: 250ms ease;
 }
 
 .btn:is(:hover, :focus-visible)::before{
@@ -146,11 +144,7 @@ section{
 
 .btn:is(:hover, :focus-visible) .text-1{
   transform: translateY(-4rem);
-}
-
-.btn:is(:hover, :focus-visible) .text-2{
-  top: 50%;
-  transform: translate(-50%, -50%);
+  color: var(--white);
 }
 
 .shine{
@@ -195,7 +189,7 @@ section{
 }
 
 .header .logo img{
-  width: 70px;
+  width: 75px;
   padding-right: .5rem;
 }
 
@@ -309,9 +303,15 @@ section{
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: url(../images/home.jpg) no-repeat;
+  background-image: url(../images/hero-image.jpeg);
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center center;
+}
+
+@media screen and (max-width: 500px) {
+    .home {background-position-x: 70%;
+    }
 }
 
 .home .content{
@@ -364,16 +364,12 @@ section{
   padding-top: 8rem;
 }
 
-.about .container .about-content h3{
-  font-size: 3rem;
-  color: var(--primary-color);
-}
-
 .about .container .about-content p{
   font-size: 1.6rem;
   color: #444;
   padding: 1rem 0;
   line-height: 1.8;
+  text-transform: initial;
 }
 
 /* ends */
@@ -487,6 +483,7 @@ section{
 .courses .box-container .box .content h3{
   font-size: 2rem;
   color: #444;
+  text-transform: initial;
 }
 
 .courses .box-container .box .content .stars{

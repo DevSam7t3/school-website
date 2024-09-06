@@ -64,17 +64,22 @@ section{
 
 .logo_headline {
     color: var(--primary-color);
-    font-size: 1.9rem;
+    font-size: 2rem;
     font-weight: bold;
-    text-transform: initial;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--green);
 }
 
 .logo_subheading {
     color: var(--primary-color);
-    font-size: 1rem;
+    font-size: 1.1rem;
     text-transform: initial;
 }
 
+.logo_banner {
+    display: flex;
+    align-items: center;
+}
 .scroll-top.active {
     display: flex;
     right: 2rem;
@@ -329,6 +334,7 @@ section{
   line-height: 2;
   color: var(--white);
   padding: 1rem 0;
+  text-transform: initial;
 }
 
 /* ends */
@@ -403,7 +409,7 @@ section{
   font-size: 1.7rem;
   color: #444;
   padding: .5rem 0;
-  text-transform: capitalize;
+  text-transform: initial;
 }
 
 .subjects .box-container .box:hover h3{
@@ -592,6 +598,7 @@ section{
   font-size: 1.5rem;
   line-height: 2;
   color: #777;
+  text-transform: initial;
 }
 
 /* ends */
@@ -868,6 +875,10 @@ section{
 
 .footer .credit span{
   color: var(--primary-color);
+}
+
+.footer .logo_headline {
+    font-size: 2.5rem;
 }
 
 /* ends */

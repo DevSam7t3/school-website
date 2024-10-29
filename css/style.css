@@ -213,8 +213,8 @@ section {
     align-items: center;
 }
 
-.header .logo img {
-    width: 75px;
+.logo img {
+    width: 200px;
     padding-right: 0.5rem;
 }
 
@@ -330,7 +330,7 @@ section {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background-image: url(../images/main-bg.jpeg);
+    background-image: url(../images/New\ Project.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
